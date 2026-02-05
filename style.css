@@ -51,8 +51,6 @@ body {
 
 
 
-
-
 .profile-card {
   width: 350px;
   background-color: #ffffff;
@@ -141,4 +139,49 @@ body {
     line-height: 125%;
     letter-spacing: 1.5px;
     text-align: center;
+}
+
+
+/* responsive */
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+    .page::before {
+        top: -600px;
+        left: -400px;
+    }
+
+    .page::after {
+        bottom: -600px;
+        right: -300px;
+    }
+}
+
+/* Mobile (375px) */
+@media (max-width: 375px) {
+    .profile-card {
+        width: 300px; 
+    }
+
+    .page::before {
+        top: -520px;
+        left: -550px;
+        width: 800px; 
+        height: 800px;
+    }
+
+    .page::after {
+        bottom: -520px;
+        right: -550px;
+        width: 800px;
+        height: 800px;
+    }
+
+    .card-header {
+        height: 140px; 
+    }
+
+    .stat-number {
+        font-size: 16px; 
+    }
 }
